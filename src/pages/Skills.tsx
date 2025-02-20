@@ -39,9 +39,6 @@ const Skills = () => {
                 <h2 className="text-2xl font-semibold mb-2">{category.category}</h2>
                 <p className="text-gray-600 dark:text-gray-400">{category.description}</p>
               </div>
-               Continuing with the Skills.tsx file content:
-
-```tsx
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
                 {category.skills.map((skill, skillIndex) => (
                   <motion.div
