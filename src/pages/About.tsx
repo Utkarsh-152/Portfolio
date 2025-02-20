@@ -1,15 +1,17 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import ParticleBackground from '../components/ParticleBackground';
 
 const About = () => {
   return (
-    <div className="min-h-screen pt-20 pb-16">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div className="min-h-screen pt-20 pb-16 relative">
+      <ParticleBackground />
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
-          className="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-8"
+          className="bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm rounded-lg shadow-lg p-8"
         >
           <h1 className="text-4xl font-bold mb-8">About Me</h1>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">

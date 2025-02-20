@@ -2,6 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { ArrowRight, Github, Trophy, FolderGit2, Brain } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import ParticleBackground from '../components/ParticleBackground';
 
 const StatCard = ({ icon: Icon, title, value, subtitle }: {
   icon: React.ElementType;
@@ -12,7 +13,7 @@ const StatCard = ({ icon: Icon, title, value, subtitle }: {
   <motion.div
     initial={{ opacity: 0, y: 20 }}
     animate={{ opacity: 1, y: 0 }}
-    className="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6"
+    className="bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm rounded-lg shadow-lg p-6"
   >
     <div className="flex items-start justify-between">
       <div>
@@ -20,7 +21,7 @@ const StatCard = ({ icon: Icon, title, value, subtitle }: {
         <p className="mt-2 text-3xl font-bold text-gray-900 dark:text-white">{value}</p>
         <p className="mt-1 text-sm text-gray-500 dark:text-gray-400">{subtitle}</p>
       </div>
-      <div className="p-3 bg-blue-100 dark:bg-blue-900 rounded-lg">
+      <div className="p-3 bg-blue-100 dark:bg-blue-900/50 rounded-lg">
         <Icon className="w-6 h-6 text-blue-600 dark:text-blue-400" />
       </div>
     </div>
@@ -69,12 +70,11 @@ const Home = () => {
       subtitle: "From Datasets in various domains"
     }
   ];
-  
 
   return (
-    <div className="min-h-screen">
-            
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20">
+    <div className="min-h-screen relative">
+      <ParticleBackground />
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
           <motion.div
             initial={{ opacity: 0, y: 20 }}

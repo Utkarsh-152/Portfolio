@@ -2,11 +2,13 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { projects } from '../data/projects';
 import { Github, ExternalLink } from 'lucide-react';
+import ParticleBackground from '../components/ParticleBackground';
 
 const Projects = () => {
   return (
-    <div className="min-h-screen pt-20 pb-16">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div className="min-h-screen pt-20 pb-16 relative">
+      <ParticleBackground />
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <motion.h1
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -22,7 +24,7 @@ const Projects = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: index * 0.1 }}
-              className="bg-white dark:bg-gray-800 rounded-lg shadow-lg overflow-hidden"
+              className="bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm rounded-lg shadow-lg overflow-hidden"
             >
               <img
                 src={project.image}

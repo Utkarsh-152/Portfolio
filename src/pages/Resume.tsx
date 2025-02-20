@@ -1,16 +1,18 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { FileDown, Mail, Phone, MapPin, Linkedin, Github } from 'lucide-react';
+import ParticleBackground from '../components/ParticleBackground';
 
 const Resume = () => {
   return (
-    <div className="min-h-screen pt-20 pb-16">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div className="min-h-screen pt-20 pb-16 relative">
+      <ParticleBackground />
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
-          className="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-8"
+          className="bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm rounded-lg shadow-lg p-8"
         >
           <div className="flex justify-between items-start mb-8">
             <div>
