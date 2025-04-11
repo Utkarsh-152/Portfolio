@@ -7,6 +7,13 @@ export const projects = [
     "image": "https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?q=80&w=2076&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
   {
+    "title": "AI-Powered Image Enhancer",
+    "description": "A modern web application that enhances image quality using AI technology. Built with React and powered by the PicWish API.",
+    "techStack": ["Node.js", "ReactJS", "PICWishAPI", "AscernityUI"],
+    "githubUrl": "https://github.com/Utkarsh-152/AIPoweredImageEnhacer",
+    "image": "https://images.unsplash.com/photo-1674027444485-cec3da58eef4?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
     "title": "Zomato Restraunts Data Insights",
     "description": "A Power BI Responsive Dashboard, it provides insights into restaurant distribution, country-wise comparisons, and detailed restaurant analysis.",
     "techStack": ["Power BI", "Data Visualization"],
